@@ -1,0 +1,240 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff6201;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 45px;
+  min-width: 185px;
+  -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  z-index: 999;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  background-color: #fff;
+  color: #ff6201;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.header__content {
+  margin-top: 210px;
+  max-width: 680px;
+}
+.header__title {
+  font-size: 64px;
+  font-family: "Orbitron", sans-serif;
+}
+.header__title span {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 2px 2px 0 #ff6201;
+}
+.header__subtitle {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #ff6201;
+}
+
+.nav {
+  padding-top: 50px;
+}
+.nav__list {
+  gap: 40px;
+  list-style: none;
+  color: #fff;
+}
+
+.section-heading {
+  text-align: center;
+  padding: 40px 0;
+}
+.section-heading__title {
+  font-size: 48px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+#categories {
+  margin-top: 100px;
+}
+
+.categories-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+
+.categories-item-unique {
+  max-width: 510px;
+}
+.categories-item-unique__image {
+  border-top-left-radius: 100px;
+  overflow: hidden;
+}
+.categories-item-unique__title {
+  font-size: 36px;
+  font-weight: 400;
+}
+.categories-item-unique__descr {
+  font-size: 16px;
+}
+.categories-item-unique__body {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 55px;
+}
+
+.categories-item {
+  position: relative;
+}
+.categories-item__image {
+  position: relative;
+  border-top-left-radius: 25px;
+  overflow: hidden;
+  z-index: 8;
+}
+.categories-item__image::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.categories-item__title {
+  z-index: 10;
+  position: absolute;
+  bottom: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#lifestyle {
+  margin-top: 100px;
+}
+
+#classes {
+  margin-top: 100px;
+  background-image: url("../images/classes-background.png");
+}
+
+.classes-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.classes-item__row {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.classes-item__image {
+  z-index: 5;
+  position: relative;
+  margin-bottom: 20px;
+}
+.classes-item__image img {
+  width: 100%;
+  height: 100%;
+}
+.classes-item__image::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  background-color: #ff6201;
+  border-radius: 5px;
+  bottom: 0;
+  left: -1.5%;
+  width: 103%;
+  height: 85px;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+}
+.classes-item__buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
