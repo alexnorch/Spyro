@@ -22,16 +22,26 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <div class="container d-flex justify-between align-center">
-          <h1 class="logo">Spyro</h1>
-          <ul class="nav__list d-flex">
-            <li class="nav__item">Classes</li>
-            <li class="nav__item">Team</li>
-            <li class="nav__item">About us</li>
-            <li class="nav__item">Gallery</li>
-          </ul>
-          <div class="btn btn-main">Contact us</div>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__inner">
+            <a href="#" class="navbar__brand">Spyro</a>
+            <ul class="navbar-nav">
+              <li class="navbar-nav__item">
+                <a class="navbar-nav__link" href="#classes">Classes</a>
+              </li>
+              <li class="navbar-nav__item">
+                <a class="navbar-nav__link" href="#team">Team</a>
+              </li>
+              <li class="navbar-nav__item">
+                <a class="navbar-nav__link" href="#about">About us</a>
+              </li>
+              <li class="navbar-nav__item">
+                <a class="navbar-nav__link" href="#gallery"> Gallery </a>
+              </li>
+            </ul>
+            <button class="btn btn__main">Contact us</button>
+          </div>
         </div>
       </nav>
       <div class="container">
@@ -43,7 +53,7 @@
             all fitness levels and provide a fun and motivating environment to
             help you reach your peak performance.
           </p>
-          <button class="btn">Start free trail</button>
+          <button class="btn btn__main">Start free trail</button>
         </div>
       </div>
     </header>
@@ -112,78 +122,101 @@
         </div>
       </section>
       <!-- Classes -->
-      <section id="classes">
+      <section class="classes">
         <div class="container">
           <div class="section-heading">
             <h3 class="section-heading__title">Classes</h3>
           </div>
-          <div class="classes-items">
-            <div class="classes-item">
-              <div class="classes-item__image">
+          <div class="classes-cards">
+            <div class="classes-card">
+              <div class="classes-card__image">
                 <img src="./images/classes_01.png" alt="" />
               </div>
-              <div class="classes-item__row">
-                <h5>Yoga</h5>
-                <p>29 students</p>
+              <div class="classes-card__row">
+                <h5 class="classes-card__type">Yoga</h5>
+                <p class="classes-card__students">
+                  <object data="./images/solar-users.svg"></object>
+                  <span>29 students</span>
+                </p>
               </div>
-              <div class="classes-item__row">
-                <h5>Strength & Sweat</h5>
-                <p>2h</p>
+              <div class="classes-card__row">
+                <p class="classes-card__name">Strength & Sweat</p>
+                <p class="classes-card__duration">
+                  <object data="./images/icon-timer.svg"></object>
+                  <span>2 H</span>
+                </p>
               </div>
-              <p>Instructor: <span>Esther Howard</span></p>
-              <ul>
-                <li>No. of Classes: <span>30</span></li>
-                <li>Difficulty: <span>Beginner</span></li>
+              <p class="classes-card__text">Instructor: Esther Howard</p>
+              <ul class="classes-card__details">
+                <li class="classes-card__detail">No. of Classes: 30</li>
+                <li class="classes-card__detail">Difficulty: Beginner</li>
               </ul>
-              <div class="classes-item__buttons">
+              <div class="classes-card__bottom">
                 <button class="btn">Learn more</button>
-                <button class="btn btn-transparent">Start a free trail</button>
+                <button class="btn btn__transparent">Start a free trail</button>
               </div>
             </div>
-            <div class="classes-item">
-              <div class="classes-item__image">
+
+            <div class="classes-card">
+              <div class="classes-card__image">
                 <img src="./images/classes_02.png" alt="" />
               </div>
-              <div class="classes-item__row">
-                <h5>Yoga</h5>
-                <p>29 students</p>
+              <div class="classes-card__row">
+                <h5 class="classes-card__type">Yoga</h5>
+                <p class="classes-card__students">
+                  <object data="./images/solar-users.svg"></object>
+                  <span>29 students</span>
+                </p>
               </div>
-              <div class="classes-item__row">
-                <h5>Strength & Sweat</h5>
-                <p>2h</p>
+              <div class="classes-card__row">
+                <p class="classes-card__name">Strength & Sweat</p>
+                <p class="classes-card__duration">
+                  <object data="./images/icon-timer.svg"></object>
+                  <span>2 H</span>
+                </p>
               </div>
-              <p>Instructor: <span>Esther Howard</span></p>
-              <ul>
-                <li>No. of Classes: <span>30</span></li>
-                <li>Difficulty: <span>Beginner</span></li>
+              <p class="classes-card__text">Instructor: Esther Howard</p>
+              <ul class="classes-card__details">
+                <li class="classes-card__detail">No. of Classes: 30</li>
+                <li class="classes-card__detail">Difficulty: Beginner</li>
               </ul>
-              <div class="classes-item__buttons">
+              <div class="classes-card__bottom">
                 <button class="btn">Learn more</button>
-                <button class="btn btn-transparent">Start a free trail</button>
+                <button class="btn btn__transparent">Start a free trail</button>
               </div>
             </div>
-            <div class="classes-item">
-              <div class="classes-item__image">
+
+            <div class="classes-card">
+              <div class="classes-card__image">
                 <img src="./images/classes_03.png" alt="" />
               </div>
-              <div class="classes-item__row">
-                <h5>Yoga</h5>
-                <p>29 students</p>
+              <div class="classes-card__row">
+                <h5 class="classes-card__type">Yoga</h5>
+                <p class="classes-card__students">
+                  <object data="./images/solar-users.svg"></object>
+                  <span>29 students</span>
+                </p>
               </div>
-              <div class="classes-item__row">
-                <h5>Strength & Sweat</h5>
-                <p>2h</p>
+              <div class="classes-card__row">
+                <p class="classes-card__name">Strength & Sweat</p>
+                <p class="classes-card__duration">
+                  <object data="./images/icon-timer.svg"></object>
+                  <span>2 H</span>
+                </p>
               </div>
-              <p>Instructor: <span>Esther Howard</span></p>
-              <ul>
-                <li>No. of Classes: <span>30</span></li>
-                <li>Difficulty: <span>Beginner</span></li>
+              <p class="classes-card__text">Instructor: Esther Howard</p>
+              <ul class="classes-card__details">
+                <li class="classes-card__detail">No. of Classes: 30</li>
+                <li class="classes-card__detail">Difficulty: Beginner</li>
               </ul>
-              <div class="classes-item__buttons">
+              <div class="classes-card__bottom">
                 <button class="btn">Learn more</button>
-                <button class="btn btn-transparent">Start a free trail</button>
+                <button class="btn btn__transparent">Start a free trail</button>
               </div>
             </div>
+          </div>
+          <div class="classes__bottom">
+            <button class="btn btn__main">See all</button>
           </div>
         </div>
       </section>
@@ -254,7 +287,9 @@
       <section class="movie">
         <div class="container">
           <div class="movie__content">
-            <img src="./images/movie.png" alt="" />
+            <video class="movie__video">
+              <source src="./videos/training.mp4" type="video/mp4" />
+            </video>
             <button class="movie__btn">
               <i class="fa-solid fa-play"></i>
             </button>
@@ -419,6 +454,20 @@
           </div>
         </div>
       </section>
+      <section class="free-trial">
+        <div class="container">
+          <div class="free-trial__inner">
+            <div class="free-trial__left">
+              <h3 class="free-trial__title">Are you ready to change?</h3>
+              <p class="free-trial__subtitle">
+                Challenge your strength. Stretch your body. Breathe easy. Our
+                team of world-class instructors will empower
+              </p>
+            </div>
+            <button class="btn btn__transparent">Start your Free Trial</button>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -431,11 +480,54 @@
             step towards a healthier, stronger you. Let's sweat, have fun, and
             make fitness a way of life together!
           </p>
-          <div class="footer__social-medias"></div>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </li>
+          </ul>
+          <hr />
           <p class="footer__copyright">SPYRO 2023. All rights reserved.</p>
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__image">
+          <img src="./images/movie.png" alt="" />
+        </div>
+        <div class="modal__content">
+          <div class="modal__header">
+            <h3 class="modal__title">Modal title</h3>
+            <button class="modal__close">X</button>
+          </div>
+          <div class="modal__body">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="Your Name" />
+            <label for="phone">Phone number</label>
+            <input id="phone" type="tel" placeholder="Your Phone" />
+            <button class="btn">Submit</button>
+          </div>
+          <div class="modal__footer">test</div>
+        </div>
+      </div>
+    </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
