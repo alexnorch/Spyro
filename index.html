@@ -18,29 +18,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Spyro</title>
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
         <div class="container">
           <div class="navbar__inner">
-            <a href="#" class="navbar__brand">Spyro</a>
-            <ul class="navbar-nav">
-              <li class="navbar-nav__item">
-                <a class="navbar-nav__link" href="#classes">Classes</a>
-              </li>
-              <li class="navbar-nav__item">
-                <a class="navbar-nav__link" href="#team">Team</a>
-              </li>
-              <li class="navbar-nav__item">
-                <a class="navbar-nav__link" href="#about">About us</a>
-              </li>
-              <li class="navbar-nav__item">
-                <a class="navbar-nav__link" href="#gallery"> Gallery </a>
-              </li>
-            </ul>
-            <button class="btn btn__main">Contact us</button>
+            <a href="#" class="logo">Spyro</a>
+            <div class="navbar-menu">
+              <ul class="navbar-menu__list">
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Classes</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Team</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">About Us</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Gallery</a>
+                </li>
+              </ul>
+              <button class="btn btn__main btn-modal contact-btn">
+                Contact us
+              </button>
+            </div>
+            <div class="hamburger">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </div>
           </div>
         </div>
       </nav>
@@ -53,48 +62,54 @@
             all fitness levels and provide a fun and motivating environment to
             help you reach your peak performance.
           </p>
-          <button class="btn btn__main">Start free trail</button>
+          <button class="btn btn__main btn-modal">Start free trail</button>
         </div>
       </div>
+      <div class="header__bottom"></div>
     </header>
     <main>
       <!-- Categories -->
-      <section id="categories">
+      <section class="categories">
         <div class="container">
           <div class="section-heading">
             <h2 class="section-heading__title">Find what moves you</h2>
           </div>
-          <div class="categories-list">
-            <div class="categories-item-unique">
-              <div class="categories-item-unique__image">
+
+          <div class="categories__content">
+            <div class="category-preview">
+              <div class="category-preview__image">
                 <img src="./images/category_01.png" alt="" />
               </div>
-              <div class="categories-item-unique__body">
-                <h4 class="categories-item-unique__title">GYM</h4>
-                <p class="categories-item-unique__descr">
+              <div class="category-preview__body">
+                <h4 class="category-preview__title">GYM</h4>
+                <p class="category-preview__descr">
                   Expect a heart-pumping workout that will leave you feeling
                   energized and accomplished. Our supportive community of
                   like-minded individuals.
                 </p>
               </div>
             </div>
-            <div class="categories-item">
-              <div class="categories-item__image">
-                <img src="./images/category_02.png" alt="" />
+
+            <!-- Categories cards -->
+            <div class="categories-cards">
+              <div class="category-card">
+                <div class="category-card__image">
+                  <img src="./images/category_02.png" alt="" />
+                </div>
+                <h4 class="category-card__title">Zumba</h4>
               </div>
-              <h4 class="categories-item__title">Zumba</h4>
-            </div>
-            <div class="categories-item">
-              <div class="categories-item__image">
-                <img src="./images/category_03.png" alt="" />
+              <div class="category-card">
+                <div class="category-card__image">
+                  <img src="./images/category_03.png" alt="" />
+                </div>
+                <h4 class="category-card__title">Yoga</h4>
               </div>
-              <h4 class="categories-item__title">Yoga</h4>
-            </div>
-            <div class="categories-item">
-              <div class="categories-item__image">
-                <img src="./images/category_04.png" alt="" />
+              <div class="category-card">
+                <div class="category-card__image">
+                  <img src="./images/category_04.png" alt="" />
+                </div>
+                <h4 class="category-card__title">Martial Arts</h4>
               </div>
-              <h4 class="categories-item__title">Martial Arts</h4>
             </div>
           </div>
         </div>
@@ -110,10 +125,10 @@
               every mood with classes sorted by time, style, and skill level.
             </p>
           </div>
-        </div>
-        <div class="lifestyle__content">
-          <div class="lifestyle__image">
-            <img src="./images/lifestyle.png" alt="" />
+          <div class="lifestyle__content">
+            <div class="lifestyle__image">
+              <img src="./images/lifestyle.png" alt="" />
+            </div>
           </div>
         </div>
         <div class="rectangles">
@@ -266,12 +281,14 @@
         <div class="container">
           <div class="mobile-app__content">
             <div class="mobile-app__left">
-              <h3 class="mobile-app__title">
-                Download the most loved fitness app
-              </h3>
-              <p class="mobile-app__subtitle">
-                Start your fitness journey with us. Join the cult!
-              </p>
+              <div class="section-heading">
+                <h3 class="section-heading__title">
+                  Download the most loved fitness app
+                </h3>
+                <p class="section-heading__subtitle">
+                  Start your fitness journey with us. Join the cult!
+                </p>
+              </div>
               <div class="mobile-app__links">
                 <a href="#"><img src="./images/google-play.png" alt="" /></a>
                 <a href="#"><img src="./images/app-store.png" alt="" /></a>
@@ -297,67 +314,67 @@
         </div>
       </section>
       <!-- Feedback section -->
-      <section class="feedback">
+      <section class="testimonials">
         <div class="container">
           <div class="section-heading">
             <h3 class="section-heading__title">Client’s Feedback</h3>
           </div>
-          <div class="feedback-cards">
-            <div class="feedback-card">
-              <p class="feedback-card__text">
+          <div class="testimonials-cards">
+            <div class="testimonial-card">
+              <p class="testimonial-card__text">
                 Al-Balad is essentially Jeddah old town. It was once surrounded
                 by a wall, but now only the gates re
               </p>
-              <div class="feedback-card__rating">
+              <div class="testimonial-card__rating">
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-              <div class="feedback-card__bottom">
-                <div class="feedback-card__thumbnail">
+              <div class="testimonial-card__bottom">
+                <div class="testimonial-card__thumbnail">
                   <img src="./images/feedback_author.png" alt="" />
                 </div>
-                <p class="feedback-card__author">Olehandro H.</p>
+                <p class="testimonial-card__author">Olehandro H.</p>
               </div>
             </div>
-            <div class="feedback-card">
-              <p class="feedback-card__text">
+            <div class="testimonial-card">
+              <p class="testimonial-card__text">
                 Al-Balad is essentially Jeddah old town. It was once surrounded
                 by a wall, but now only the gates re
               </p>
-              <div class="feedback-card__rating">
+              <div class="testimonial-card__rating">
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-              <div class="feedback-card__bottom">
-                <div class="feedback-card__thumbnail">
+              <div class="testimonial-card__bottom">
+                <div class="testimonial-card__thumbnail">
                   <img src="./images/feedback_author.png" alt="" />
                 </div>
-                <p class="feedback-card__author">Olehandro H.</p>
+                <p class="testimonial-card__author">Olehandro H.</p>
               </div>
             </div>
-            <div class="feedback-card">
-              <p class="feedback-card__text">
+            <div class="testimonial-card">
+              <p class="testimonial-card__text">
                 Al-Balad is essentially Jeddah old town. It was once surrounded
                 by a wall, but now only the gates re
               </p>
-              <div class="feedback-card__rating">
+              <div class="testimonial-card__rating">
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-              <div class="feedback-card__bottom">
-                <div class="feedback-card__thumbnail">
+              <div class="testimonial-card__bottom">
+                <div class="testimonial-card__thumbnail">
                   <img src="./images/feedback_author.png" alt="" />
                 </div>
-                <p class="feedback-card__author">Olehandro H.</p>
+                <p class="testimonial-card__author">Olehandro H.</p>
               </div>
             </div>
           </div>
@@ -464,7 +481,9 @@
                 team of world-class instructors will empower
               </p>
             </div>
-            <button class="btn btn__transparent">Start your Free Trial</button>
+            <button class="btn btn__transparent btn-modal">
+              Start your Free Trial
+            </button>
           </div>
         </div>
       </section>
@@ -514,17 +533,34 @@
         </div>
         <div class="modal__content">
           <div class="modal__header">
-            <h3 class="modal__title">Modal title</h3>
+            <h3 class="modal__title">Request a callback</h3>
             <button class="modal__close">X</button>
           </div>
           <div class="modal__body">
-            <label for="name">Your name</label>
-            <input id="name" type="text" placeholder="Your Name" />
-            <label for="phone">Phone number</label>
-            <input id="phone" type="tel" placeholder="Your Phone" />
-            <button class="btn">Submit</button>
+            <form class="contact-form">
+              <div class="text-field">
+                <label class="text-field__label" for="name">Your name</label>
+                <input
+                  class="text-field__input"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="text-field">
+                <label class="text-field__label" for="phone"
+                  >Phone number</label
+                >
+                <input
+                  class="text-field__input"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone"
+                />
+              </div>
+              <button class="btn">Submit</button>
+            </form>
           </div>
-          <div class="modal__footer">test</div>
         </div>
       </div>
     </div>

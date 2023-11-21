@@ -1,6 +1,53 @@
+@import "./variables";
+
 @mixin displayFlex($align: center, $justify: center, $direction: row) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+// breakpoint-xs: 320px;
+// breakpoint-sm: 480px;
+// breakpoint-md: 768px;
+// breakpoint-lg: 1024px;
+// breakpoint-xl: 1200px;
+// breakpoint-xxl: 1201px;
+
+@mixin media-query($breakpoint) {
+  @if ($breakpoint == $breakpoint-xs) {
+    @media screen and (min-width: $breakpoint-xs) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == $breakpoint-sm) {
+    @media screen and (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == $breakpoint-lg) {
+    @media screen and (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == $breakpoint-xl) {
+    @media screen and (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == $breakpoint-xxl) {
+    @media screen and (min-width: $breakpoint-xxl) {
+      @content;
+    }
+  }
 }
